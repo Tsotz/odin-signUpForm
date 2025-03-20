@@ -7,46 +7,139 @@
     font-display: swap;
 }
 
-:root {
 
-    font-family: "Norse";
-
-}
 
 body {
 
+    font-family: "Norse", sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    background-color: rgb(221, 233, 243)
+    background-color: rgb(221, 233, 243);
+    height:100vh;
+    box-sizing: border-box;
+}
+
+
+.images {
+
+    position: relative;
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    margin-left:0;
+    justify-content: center;
+}
+
+#cruiser {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#credit {
+
+    position: absolute;
+    align-self: flex-end;
+    color:white;
+
+
+}
+
+#odinlogo {
+
+    height: 250px;
+    width: 150px;
+
+}
+
+.odin {
+
+    position:absolute;
+    background-color: black;
+    color: white;
+    opacity:75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    height: 255px;
+    width: 100%;
+    top: 10%;
+    
+    
+
+}
+
+
+.right-side {
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 .header {
 
     display:flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin: 25px;
+   
+    
+    
     
 }
 
 .form {
 
     display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-evenly;
+    flex-direction: column;
     background-color: white;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
+
+.row1, .row2, .row3{
+
+    display: flex;
+    gap:20px;
+}
+
+.row1 label, .row2 label, .row3 label {
+    width: 100px; 
+}
+
+
+
 
 .footer {
 
     display: flex;
+    flex-direction: column;
     margin:30px;
 
 }
 
 
-.images
+.footer button {
+
+    width: fit-content;
+    padding: 10px 20px; 
+    font-size: 16px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+
