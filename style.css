@@ -1,3 +1,52 @@
-h1 {
-    color:red;
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.woff2') format('woff2'),
+        url('Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+:root {
+
+    font-family: "Norse";
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 233, 243)
+}
+
+.header {
+
+    display:flex;
+    flex-direction: column;
+    margin-top: 200px;
+    
+}
+
+.form {
+
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
+    background-color: white;
+
+}
+
+.footer {
+
+    display: flex;
+    margin:30px;
+
+}
+
+
+.images
